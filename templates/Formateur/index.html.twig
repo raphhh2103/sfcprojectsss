@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+
+    {% if user  %}
+        <a href="{{ link }}">{{ link }}</a>
+{% endif %}
+{% endblock %}
+

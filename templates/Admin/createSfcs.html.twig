@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_row(form.NameSfc) }}
+    {{ form_row(form.description) }}
+    {{ form_row(form.indicatorObservable1) }}
+    {{ form_row(form.indicatorObservable2) }}
+    {{ form_row(form.indicatorObservable3) }}
+    {{ form_row(form.indicatorObservable4) }}
+    {{ form_row(form.indicatorGeneric1) }}
+    {{ form_row(form.indicatorGeneric2) }}
+    {{ form_row(form.indicatorGeneric3) }}
+    {{ form_row(form.indicatorGeneric4) }}
+
+
+
+    <button type="submit">Enregistrer</button>
+    {{ form_end(form) }}
+{% endblock %}

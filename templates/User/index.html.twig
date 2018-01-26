@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    Bienvenue sur l'acceuil User {{ app.user.username }} !
+
+    <div>
+        <a href="{{ path('security_logout')}}"> deco</a>
+    </div>
+
+{% endblock %}
